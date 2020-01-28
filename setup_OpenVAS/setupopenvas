@@ -48,6 +48,7 @@ sudo systemctl enable openvas-gsa
 #
 ps aux | grep openvas
 #
+mkdir ~/.config/i3
 wget https://raw.githubusercontent.com/IHasFeet/Configs/master/i3/config -O ~/.config/i3/config
 #
 sudo openvasmd --rebuild --progress --verbose
