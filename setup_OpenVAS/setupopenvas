@@ -1,0 +1,43 @@
+#IHasFeet 2020
+#This set of commands will setup OpenVAS, i3, xRDP and Firefox
+#
+#The aim is to take you from an Ubuntu server to a remotely accessible GUI,
+#to allow you to run the vulnerability scan, and view the results.
+#
+#xRDP will allow you to use multiple monitors if that is your client configuration.
+#
+#
+
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo do-release-upgrade
+
+sudo add-apt-repository ppa:mrazavi/openvas
+sudo apt update -y
+sudo apt-get upgrade -y
+sudo apt-get install htop iftop nmap netdiscover openvas9 texlive-latex-extra libopenvas9-dev i3 xrdp firefox conky screen wireshark texlive-latex-extra -y
+sudo apt install texlive-fonts-recommended --no-install-recommends -y
+
+sudo greenbone-nvt-sync
+sudo greenbone-scapdata-sync
+sudo greenbone-certdata-sync
+
+#It's not uncommon for one to fail - re-run above...
+sudo greenbone-nvt-sync
+sudo greenbone-scapdata-sync
+sudo greenbone-certdata-sync
+
+
+sudo service openvas-scanner restart 
+sudo service openvas-manager restart 
+sudo service openvas-gsa restart 
+
+sudo systemctl enable openvas-scanner
+sudo systemctl enable openvas-manager
+sudo systemctl enable openvas-gsa
+
+ps aux | grep openvas
+
+wget https://raw.githubusercontent.com/IHasFeet/Configs/master/i3/config -O ~/.config/i3/config
+
+sudo openvasmd --rebuild --progress --verbose
