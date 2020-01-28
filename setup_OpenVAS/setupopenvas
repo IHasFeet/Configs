@@ -6,7 +6,10 @@
 #
 #xRDP will allow you to use multiple monitors if that is your client configuration.
 #
-#
+#Execute by running the below command
+#wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupopenvas -O ~/setupopenvas && bash setupopenvas
+
+
 
 sudo apt-get update
 sudo apt-get upgrade -y
