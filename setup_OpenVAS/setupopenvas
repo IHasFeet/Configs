@@ -26,8 +26,11 @@ sudo apt-get install htop iftop nmap netdiscover openvas9 texlive-latex-extra li
 sudo apt install texlive-fonts-recommended --no-install-recommends -y
 #
 sudo greenbone-nvt-sync
+sudo sleep 10s
 sudo greenbone-scapdata-sync
+sudo sleep 10s
 sudo greenbone-certdata-sync
+sudo sleep 10s
 #
 #It's not uncommon for one to fail - re-run above...
 sudo greenbone-nvt-sync
