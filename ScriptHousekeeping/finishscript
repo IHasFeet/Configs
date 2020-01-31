@@ -1,0 +1,12 @@
+#IHasFeet 2020
+#This script will tidy up previous installations
+#
+#
+#
+#Execute by running the below command
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash finishscript
+#
+#You can run this file multiple times without causing issues.
+#Perhaps run it twice if your OS hasn't been upgraded for a while?
+#
+sudo apt autoremove -y
