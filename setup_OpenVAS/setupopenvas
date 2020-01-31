@@ -13,12 +13,12 @@
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 #
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo do-release-upgrade
+#Perform pre-script tasks
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash startscript
 #
 #We add a different respository based on advice from Greenbone
 #https://community.greenbone.net/t/openvas-on-ubuntu-18-04-whats-the-correct-way/1794
+#The startscript should perform the updates of the OS, however we're manually doing it here, because of the repository changes.
 sudo add-apt-repository ppa:mrazavi/openvas
 sudo apt update -y
 sudo apt-get upgrade -y

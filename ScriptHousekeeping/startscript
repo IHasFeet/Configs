@@ -1,0 +1,15 @@
+#IHasFeet 2020
+#This script will update the current OS and packages, before next stages begin.
+#
+#
+#
+#Execute by running the below command
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash startscript
+#
+#You can run this file multiple times without causing issues.
+#Perhaps run it twice if your OS hasn't been upgraded for a while?
+#
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo do-release-upgrade
+
