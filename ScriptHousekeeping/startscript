@@ -10,22 +10,12 @@
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 #                                                                                                                                                  
-echo IIIIIIIIIIHHHHHHHHH     HHHHHHHHH                                  FFFFFFFFFFFFFFFFFFFFFF                                              tttt          
-echo I::::::::IH:::::::H     H:::::::H                                  F::::::::::::::::::::F                                           ttt:::t          
-echo I::::::::IH:::::::H     H:::::::H                                  F::::::::::::::::::::F                                           t:::::t          
-echo II::::::IIHH::::::H     H::::::HH                                  FF::::::FFFFFFFFF::::F                                           t:::::t          
-echo I::::I    H:::::H     H:::::H    aaaaaaaaaaaaa      ssssssssss     F:::::F       FFFFFF eeeeeeeeeeee        eeeeeeeeeeee    ttttttt:::::ttttttt    
-echo I::::I    H:::::H     H:::::H    a::::::::::::a   ss::::::::::s    F:::::F            ee::::::::::::ee    ee::::::::::::ee  t:::::::::::::::::t    
-echo I::::I    H::::::HHHHH::::::H    aaaaaaaaa:::::ass:::::::::::::s   F::::::FFFFFFFFFF e::::::eeeee:::::ee e::::::eeeee:::::eet:::::::::::::::::t    
-echo I::::I    H:::::::::::::::::H             a::::as::::::ssss:::::s  F:::::::::::::::Fe::::::e     e:::::ee::::::e     e:::::etttttt:::::::tttttt    
-echo I::::I    H:::::::::::::::::H      aaaaaaa:::::a s:::::s  ssssss   F:::::::::::::::Fe:::::::eeeee::::::ee:::::::eeeee::::::e      t:::::t          
-echo I::::I    H::::::HHHHH::::::H    aa::::::::::::a   s::::::s        F::::::FFFFFFFFFFe:::::::::::::::::e e:::::::::::::::::e       t:::::t          
-echo I::::I    H:::::H     H:::::H   a::::aaaa::::::a      s::::::s     F:::::F          e::::::eeeeeeeeeee  e::::::eeeeeeeeeee        t:::::t          
-echo I::::I    H:::::H     H:::::H  a::::a    a:::::assssss   s:::::s   F:::::F          e:::::::e           e:::::::e                 t:::::t    tttttt
-echo II::::::IIHH::::::H     H::::::HHa::::a    a:::::as:::::ssss::::::sFF:::::::FF        e::::::::e          e::::::::e                t::::::tttt:::::t
-echo I::::::::IH:::::::H     H:::::::Ha:::::aaaa::::::as::::::::::::::s F::::::::FF         e::::::::eeeeeeee   e::::::::eeeeeeee        tt::::::::::::::t
-echo I::::::::IH:::::::H     H:::::::H a::::::::::aa:::as:::::::::::ss  F::::::::FF          ee:::::::::::::e    ee:::::::::::::e          tt:::::::::::tt
-echo IIIIIIIIIIHHHHHHHHH     HHHHHHHHH  aaaaaaaaaa  aaaa sssssssssss    FFFFFFFFFFF            eeeeeeeeeeeeee      eeeeeeeeeeeeee            ttttttttttt  
+echo   _____ _    _           ______        _   
+echo  |_   _| |  | |         |  ____|      | |  
+echo    | | | |__| | __ _ ___| |__ ___  ___| |_ 
+echo    | | |  __  |/ _` / __|  __/ _ \/ _ \ __|
+echo   _| |_| |  | | (_| \__ \ | |  __/  __/ |_ 
+echo  |_____|_|  |_|\__,_|___/_|  \___|\___|\__|
 #
 sudo apt-get update
 sudo apt-get upgrade -y
