@@ -10,12 +10,15 @@
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 #                                                                                                                                                  
-echo   _____ _    _           ______        _   
-echo  |_   _| |  | |         |  ____|      | |  
-echo    | | | |__| | __ _ ___| |__ ___  ___| |_ 
-echo    | | |  __  |/ _` / __|  __/ _ \/ _ \ __|
-echo   _| |_| |  | | (_| \__ \ | |  __/  __/ |_ 
-echo  |_____|_|  |_|\__,_|___/_|  \___|\___|\__|
+echo IHaveFeet												IHaveFeet
+echo 	IHaveFeet										IHaveFeet
+echo 		IHaveFeet								IHaveFeet
+echo 			IHaveFeet						IHaveFeet
+echo 				IHaveFeet				IHaveFeet
+echo 					IHaveFeet		IHaveFeet
+echo	 						IHaveFeet
+#
+echo So let me walk you through this...
 #
 sudo apt-get update
 sudo apt-get upgrade -y
