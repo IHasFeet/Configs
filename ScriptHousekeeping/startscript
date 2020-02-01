@@ -10,13 +10,7 @@
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 #                                                                                                                                                  
-echo IHaveFeet												IHaveFeet
-echo 	IHaveFeet										IHaveFeet
-echo 		IHaveFeet								IHaveFeet
-echo 			IHaveFeet						IHaveFeet
-echo 				IHaveFeet				IHaveFeet
-echo 					IHaveFeet		IHaveFeet
-echo	 						IHaveFeet
+echo IHaveFeet  IHaveFeet
 #
 echo So let me walk you through this...
 #
