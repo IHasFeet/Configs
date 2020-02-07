@@ -22,7 +22,7 @@ sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousek
 sudo add-apt-repository ppa:mrazavi/openvas
 sudo apt update -y
 sudo apt-get upgrade -y
-sudo apt-get install htop iftop nmap netdiscover openvas9 texlive-latex-extra libopenvas9-dev i3 xrdp firefox conky screen wireshark texlive-latex-extra -y
+sudo apt-get install openvas9 texlive-latex-extra libopenvas9-dev texlive-latex-extra -y
 sudo apt install texlive-fonts-recommended --no-install-recommends -y
 #
 sudo greenbone-nvt-sync
@@ -47,8 +47,5 @@ sudo systemctl enable openvas-manager
 sudo systemctl enable openvas-gsa
 #
 ps aux | grep openvas
-#
-mkdir ~/.config/i3
-wget https://raw.githubusercontent.com/IHasFeet/Configs/master/i3/config -O ~/.config/i3/config
 #
 sudo openvasmd --rebuild --progress --verbose

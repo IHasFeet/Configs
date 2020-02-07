@@ -10,3 +10,7 @@
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 sudo apt autoremove -y
+clear
+#Now we show the current IP address information...
+ip address
+

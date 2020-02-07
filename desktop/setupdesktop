@@ -1,0 +1,28 @@
+#IHasFeet 2020
+#This set of commands will setup 
+#		i3
+#		xRDP
+#		Firefox
+#		LibreOffice
+#		Onedrive
+#The aim is to take you from an Ubuntu server to a remotely accessible GUI,
+#suitable to run basic desktop functionalalities
+#
+#xRDP will allow you to use multiple monitors if that is your client configuration.
+#
+#Execute by running the below command
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/desktop/setupdesktop -O ~/setupdesktop && bash setupdesktop
+#
+#You can run this file multiple times without causing issues.
+#Perhaps run it twice if your OS hasn't been upgraded for a while?
+#
+#
+#
+#
+sudo apt-get install i3 xrdp firefox conky onedrive -y
+sudo snap install libreoffice
+#
+mkdir ~/.config
+mkdir ~/.config/i3
+wget https://raw.githubusercontent.com/IHasFeet/Configs/master/i3/config -O ~/.config/i3/config
+#
