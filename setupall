@@ -7,12 +7,14 @@
 #You can run this file multiple times without causing issues.
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
+#The primary use of this file is to call the scripts directly, without the constant apt-get update etc.
+#You will see the scripts called below are not any of the ones ending in only (e.g. setupdesktoponly)
 #Call the start script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash ~/startscript
 #Call the scripts
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setuppentesttoolsonly -O ~/setuppentesttoolsonly && bash ~/setuppentesttoolsonly
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupopenvasonly -O ~/setupopenvas && bash ~/setupopenvas
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupdesktoponly -O ~/setupdesktoponly && bash ~/setupdesktoponly
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/desktop/setupdesktop -O ~/setupdesktop && bash setupdesktop
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/pentesttools/setuppentesttools -O ~/setuppentesttools && bash setuppentesttools
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupopenvas -O ~/setupopenvas && bash setupopenvas
 #Call finish script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash ~/finishscript
 #
