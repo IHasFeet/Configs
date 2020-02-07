@@ -14,7 +14,7 @@
 #Call the start script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash startscript
 #Call the desktop script
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupdesktoponly -O ~/setupdesktoponly && bash setupdesktoponly
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/desktop/setupdesktop -O ~/setupdesktop && bash setupdesktop
 #Call finish script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash finishscript
 #
