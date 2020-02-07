@@ -14,7 +14,6 @@
 #
 #
 #Perform pre-script tasks
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash startscript
 #
 #We add a different respository based on advice from Greenbone
 #https://community.greenbone.net/t/openvas-on-ubuntu-18-04-whats-the-correct-way/1794
