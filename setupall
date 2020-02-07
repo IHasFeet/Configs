@@ -2,19 +2,18 @@
 #This script will update the current OS and packages, before next stages begin.
 #
 #Execute by running the below command
-#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupopenvas -O ~/setupopenvas && bash ~/setupopenvas
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setuppentesttoolsonly -O ~/setuppentesttoolsonly && bash ~/setuppentesttoolsonly
 #
 #You can run this file multiple times without causing issues.
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 #Call the start script
-echo Calling startup script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash ~/startscript
-#Call the openvassetup script
-echo Calling openvassetup script
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupopenvas -O ~/setupdesktop && bash ~/setupopenvas
+#Call the scripts
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setuppentesttoolsonly -O ~/setuppentesttoolsonly && bash ~/setuppentesttoolsonly
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupopenvas -O ~/setupopenvas && bash ~/setupopenvas
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupdesktoponly -O ~/setupdesktoponly && bash ~/setupdesktoponly
 #Call finish script
-echo Calling finish script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash ~/finishscript
 #
 
