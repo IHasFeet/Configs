@@ -1,9 +1,5 @@
 #IHasFeet 2020
 #This script will update the current OS and packages, before next stages begin.
-#This set of commands will setup the below packages, which are common across all profiles
-#		ranger
-#		screen
-#		nnn
 #
 #Execute by running the below command
 #sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupdesktoponly -O ~/setupdesktoponly && bash ~/setupdesktoponly

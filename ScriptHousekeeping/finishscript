@@ -2,7 +2,7 @@
 #This script will tidy up previous installations
 #
 #
-#
+##
 #Execute by running the below command
 #sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash finishscript
 #

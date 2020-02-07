@@ -25,4 +25,3 @@ sudo snap install libreoffice
 mkdir ~/.config
 mkdir ~/.config/i3
 wget https://raw.githubusercontent.com/IHasFeet/Configs/master/i3/config -O ~/.config/i3/config
-#
