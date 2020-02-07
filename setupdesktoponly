@@ -6,19 +6,19 @@
 #		nnn
 #
 #Execute by running the below command
-#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupdesktoponly -O ~/setupdesktoponly && bash setupdesktoponly
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupdesktoponly -O ~/setupdesktoponly && bash ~/setupdesktoponly
 #
 #You can run this file multiple times without causing issues.
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 #Call the start script
 echo Calling startup script
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash startscript
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash ~/startscript
 #Call the desktop script
 echo Calling desktop script
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/desktop/setupdesktop -O ~/setupdesktop && bash setupdesktop
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/desktop/setupdesktop -O ~/setupdesktop && bash ~/setupdesktop
 #Call finish script
 echo Calling finish script
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash finishscript
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash ~/finishscript
 #
 
