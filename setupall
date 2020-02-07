@@ -11,7 +11,7 @@
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash ~/startscript
 #Call the scripts
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setuppentesttoolsonly -O ~/setuppentesttoolsonly && bash ~/setuppentesttoolsonly
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupopenvas -O ~/setupopenvas && bash ~/setupopenvas
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupopenvasonly -O ~/setupopenvas && bash ~/setupopenvas
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupdesktoponly -O ~/setupdesktoponly && bash ~/setupdesktoponly
 #Call finish script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash ~/finishscript
