@@ -4,7 +4,7 @@
 #		ranger
 #		screen
 #		nnn
-#
+#		snap
 #
 #Execute by running the below command
 #sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash startscript
@@ -20,5 +20,5 @@ echo So let me walk you through this...
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo do-release-upgrade
-sudo apt-get install ranger screen nnn -y
+sudo apt-get install ranger screen nnn snap -y
 
