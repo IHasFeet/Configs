@@ -17,9 +17,10 @@
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 #
+#We install firefox separately, as Kali doesn't find an installation candidate by default, which fails the whole line.
 #
-#
-sudo apt-get install i3 xrdp firefox conky onedrive feh w3m-img imagemagick -y
+sudo apt-get install i3 xrdp  conky onedrive feh w3m-img imagemagick -y
+sudo apt-get install firefox -y
 sudo snap install libreoffice
 #
 mkdir ~/.config
