@@ -22,6 +22,7 @@
 sudo apt-get install i3 xrdp  conky onedrive feh w3m-img imagemagick -y
 sudo apt-get install firefox -y
 sudo snap install libreoffice
+sudo service xrdp start
 #
 mkdir ~/.config
 mkdir ~/.config/i3
