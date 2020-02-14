@@ -20,5 +20,7 @@ echo So let me walk you through this...
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo do-release-upgrade
-sudo apt-get install ranger screen nnn snap -y
+sudo apt-get install ranger screen nnn snap snapd -y
+sudo service snapd start
+
 
