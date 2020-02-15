@@ -17,6 +17,12 @@ echo IHaveFeet  IHaveFeet
 #
 echo So let me walk you through this...
 #
+#Firstly, we will replace the AU version of sources.list with the generic.  It may be a little slower, but it's proven to be more reliable in terms of DNS lookups
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/sources.list -O /etc/apt/sources.list
+#
+#Now we must update...
+#
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo do-release-upgrade
