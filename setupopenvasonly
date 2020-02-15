@@ -2,7 +2,7 @@
 #This script will update the current OS and packages, before next stages begin.
 #
 #Execute by running the below command
-#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupopenvas -O ~/setupopenvas && bash ~/setupopenvas
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupopenvasonly -O ~/setupopenvasonly && bash ~/setupopenvasonly
 #
 #You can run this file multiple times without causing issues.
 #Perhaps run it twice if your OS hasn't been upgraded for a while?

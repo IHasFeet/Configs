@@ -1,10 +1,4 @@
 #IHasFeet 2020
-#This set of commands will setup OpenVAS, i3, xRDP and Firefox
-#
-#The aim is to take you from an Ubuntu server to a remotely accessible GUI,
-#to allow you to run the vulnerability scan, and view the results.
-#
-#xRDP will allow you to use multiple monitors if that is your client configuration.
 #
 #Execute by running the below command
 #sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupopenvas -O ~/setupopenvas && bash setupopenvas
