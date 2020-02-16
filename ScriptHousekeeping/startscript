@@ -26,7 +26,7 @@ sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousek
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo do-release-upgrade
-sudo apt-get install ranger screen nnn snap snapd make -y
+sudo apt-get install ranger screen nnn snap snapd make python-pip -y
 sudo service snapd start
 
 
