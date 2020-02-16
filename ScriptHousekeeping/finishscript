@@ -10,6 +10,12 @@
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 sudo apt autoremove -y
+sudo rm ~/finishscript -f
+sudo rm ~/setupall -f
+sudo rm ~/setupdesktop -f
+sudo rm ~/setupopenvas -f 
+sudo rm ~/setuppentesttools -f 
+sudo rm ~/startscript -f 
 clear
 #Now we show the current IP address information...
 ip address
