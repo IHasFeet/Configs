@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 #IHasFeet 2020
 #This script will update the current OS and packages, before next stages begin.
 #This set of commands will setup the below packages, which are common across all profiles

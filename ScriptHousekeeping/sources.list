@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 #deb cdrom:[Ubuntu 18.04 LTS _Bionic Beaver_ - Release amd64 (20180426)]/ bionic main restricted
 
 # See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
