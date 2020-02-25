@@ -11,12 +11,22 @@
 #The primary use of this file is to call the scripts directly, without the constant apt-get update etc.
 #You will see the scripts called below are not any of the ones ending in only (e.g. setupdesktoponly)
 #Call the start script
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash ~/startscript
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript
+sudo chmod +x ~/startscript
+sudo ~/startscript
 #Call the scripts
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/desktop/setupdesktop -O ~/setupdesktop && bash setupdesktop
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/pentesttools/setuppentesttools -O ~/setuppentesttools && bash setuppentesttools
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupopenvas -O ~/setupopenvas && bash setupopenvas
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/desktop/setupdesktop -O ~/setupdesktop
+chmod +x ~/setupdesktop
+~/setupdesktop
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/pentesttools/setuppentesttools -O ~/setuppentesttools
+chmod +x ~/setuppentesttools
+~/setuppentesttools
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupopenvas -O ~/setupopenvas
+chmod +x ~/setupopenvas
+~/setupopenvas
 #Call finish script
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash ~/finishscript
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript
+chmod +x ~/finishscript
+~/finishscript
 #
 
