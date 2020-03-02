@@ -16,17 +16,17 @@ sudo chmod +x ~/startscript
 sudo ~/startscript
 #Call the scripts
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/desktop/setupdesktop -O ~/setupdesktop
-chmod +x ~/setupdesktop
+sudo chmod +x ~/setupdesktop
 ~/setupdesktop
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/pentesttools/setuppentesttools -O ~/setuppentesttools
-chmod +x ~/setuppentesttools
+sudo chmod +x ~/setuppentesttools
 ~/setuppentesttools
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupopenvas -O ~/setupopenvas
-chmod +x ~/setupopenvas
+sudo chmod +x ~/setupopenvas
 ~/setupopenvas
 #Call finish script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript
-chmod +x ~/finishscript
+sudo chmod +x ~/finishscript
 ~/finishscript
 #
 
