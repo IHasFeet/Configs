@@ -24,6 +24,7 @@ sudo chmod +x ~/setuppentesttools
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupopenvas -O ~/setupopenvas
 sudo chmod +x ~/setupopenvas
 ~/setupopenvas
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupsonarqube -O ~/setupsonarqube
 sudo chmod +x ~/setupsonarqube
 ~/setupsonarqube
 #Call finish script
