@@ -1,0 +1,15 @@
+#! /usr/bin/env bash
+#IHasFeet 2020
+#
+#Execute by running the below command
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/SonarQube/setupsonarqube -O ~/setupsonarqube && bash setupopsonarqube
+#
+#
+#This information came from https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04#installing-the-oracle-jdk
+# AND
+# https://www.digitalocean.com/community/tutorials/how-to-ensure-code-quality-with-sonarqube-on-ubuntu-18-04
+sudo apt install openjdk-11-jdk openjdk-11-jre -y
+sudo sh -c 'echo JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/" >> /etc/environment'
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.2.0.32929.zip -O ~/sonarqube-8.2.0.32929.zip 
+unzip sonarqube-8.2.0.32929.zip
+./sonarqube-8.2.0.32929/bin/linux-x86-64/sonar.sh start
