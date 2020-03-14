@@ -10,13 +10,16 @@
 #You can run this file multiple times without causing issues.
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
+echo setupfinishscript_001 >> ~/setup.log
 sudo apt autoremove -y
+echo setupfinishscript_002 >> ~/setup.log
 sudo rm ~/finishscript -f
 sudo rm ~/setupall -f
 sudo rm ~/setupdesktop -f
 sudo rm ~/setupopenvas -f 
 sudo rm ~/setuppentesttools -f 
 sudo rm ~/startscript -f 
+echo setupfinishscript_003 >> ~/setup.log
 clear
 #Now we show the current IP address information...
 ip address

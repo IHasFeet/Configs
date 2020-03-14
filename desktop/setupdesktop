@@ -20,11 +20,18 @@
 #
 #We install firefox separately, as Kali doesn't find an installation candidate by default, which fails the whole line.
 #
+echo setupdesktop_001 >> ~/setup.log
 sudo apt-get install i3 xrdp  conky onedrive feh w3m-img imagemagick -y
+echo setupdesktop_002 >> ~/setup.log
 sudo apt-get install firefox -y
+echo setupdesktop_003 >> ~/setup.log
 sudo snap install libreoffice
+echo setupdesktop_004 >> ~/setup.log
 sudo service xrdp start
+echo setupdesktop_005 >> ~/setup.log
 #
 mkdir ~/.config
 mkdir ~/.config/i3
+echo setupdesktop_006 >> ~/setup.log
 wget https://raw.githubusercontent.com/IHasFeet/Configs/master/i3/config -O ~/.config/i3/config
+echo setupdesktop_007 >> ~/setup.log

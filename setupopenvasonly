@@ -9,13 +9,17 @@
 #Perhaps run it twice if your OS hasn't been upgraded for a while?
 #
 #Call the start script
+echo setupdesktoponly_001 >> ~/setup.log
 echo Calling startup script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash ~/startscript
+echo setupdesktoponly_002 >> ~/setup.log
 #Call the openvassetup script
 echo Calling openvassetup script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupopenvas -O ~/setupdesktop && bash ~/setupopenvas
+echo setupdesktoponly_003 >> ~/setup.log
 #Call finish script
 echo Calling finish script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash ~/finishscript
+echo setupdesktoponly_004 >> ~/setup.log
 #
 

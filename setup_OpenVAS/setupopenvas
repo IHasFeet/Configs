@@ -13,11 +13,15 @@
 #We add a different respository based on advice from Greenbone
 #https://community.greenbone.net/t/openvas-on-ubuntu-18-04-whats-the-correct-way/1794
 #The startscript should perform the updates of the OS, however we're manually doing it here, because of the repository changes.
+echo setupopenvas_001 >> ~/setup.log
 sudo add-apt-repository ppa:mrazavi/openvas
+echo setupopenvas_001 >> ~/setup.log
 sudo apt update -y
 sudo apt-get upgrade -y
+echo setupopenvas_002 >> ~/setup.log
 sudo apt-get install openvas9 texlive-latex-extra libopenvas9-dev texlive-latex-extra -y
 sudo apt install texlive-fonts-recommended --no-install-recommends -y
+echo setupopenvas_003 >> ~/setup.log
 #
 sudo greenbone-nvt-sync
 sudo sleep 10s
@@ -32,6 +36,7 @@ sudo greenbone-scapdata-sync
 sudo greenbone-certdata-sync
 #
 #
+echo setupopenvas_004 >> ~/setup.log
 sudo service openvas-scanner restart 
 sudo service openvas-manager restart 
 sudo service openvas-gsa restart 
@@ -40,6 +45,8 @@ sudo systemctl enable openvas-scanner
 sudo systemctl enable openvas-manager
 sudo systemctl enable openvas-gsa
 #
+echo setupopenvas_005 >> ~/setup.log
 ps aux | grep openvas
 #
 sudo openvasmd --rebuild --progress --verbose
+echo setupopenvas_006 >> ~/setup.log
