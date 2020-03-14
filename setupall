@@ -11,6 +11,8 @@
 #The primary use of this file is to call the scripts directly, without the constant apt-get update etc.
 #You will see the scripts called below are not any of the ones ending in only (e.g. setupdesktoponly)
 #Call the start script
+echo "STARTING RUN..." >> ~/setup.log
+echo `date` >> ~/setup.log
 echo setupall_001 >> ~/setup.log
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript
 sudo chmod +x ~/startscript
@@ -29,7 +31,7 @@ sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVA
 sudo chmod +x ~/setupopenvas
 ~/setupopenvas
 echo setupall_005 >> ~/setup.log
-sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setup_OpenVAS/setupsonarqube -O ~/setupsonarqube
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/SonarQube/setupsonarqube -O ~/setupsonarqube
 sudo chmod +x ~/setupsonarqube
 ~/setupsonarqube
 echo setupall_006 >> ~/setup.log
@@ -38,5 +40,8 @@ sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousek
 sudo chmod +x ~/finishscript
 ~/finishscript
 echo setupall_007 >> ~/setup.log
+echo "FINISHING RUN..." >> ~/setup.log
+echo `date` >> ~/setup.log
+
 #
 #
