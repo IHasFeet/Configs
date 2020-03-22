@@ -1,0 +1,19 @@
+#! /usr/bin/env bash
+#IHasFeet 2020
+#This set of commands will setup 
+#		MonoDevelop
+#	
+#Execute by running the below command
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/dev/setupdev -O ~/setupdev && bash setupdev
+#
+#You can run this file multiple times without causing issues.
+#Perhaps run it twice if your OS hasn't been upgraded for a while?
+#
+#
+#
+sudo apt install apt-transport-https dirmngr
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb https://download.mono-project.com/repo/ubuntu vs-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-vs.list
+sudo apt update
+sudo apt-get install monodevelop -y
+

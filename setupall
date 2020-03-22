@@ -35,6 +35,10 @@ sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/SonarQube/se
 sudo chmod +x ~/setupsonarqube
 ~/setupsonarqube
 echo setupall_006 >> ~/setup.log
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/dev/setupdev -O ~/setupdev
+sudo chmod +x ~/setupdev
+~/setupdev
+echo setupall_006a >> ~/setup.log
 #Call finish script
 sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript
 sudo chmod +x ~/finishscript
