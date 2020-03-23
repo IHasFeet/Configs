@@ -35,3 +35,4 @@ mkdir ~/.config/i3
 echo setupdesktop_006 >> ~/setup.log
 wget https://raw.githubusercontent.com/IHasFeet/Configs/master/i3/config -O ~/.config/i3/config
 echo setupdesktop_007 >> ~/setup.log
+echo i3 > ~/.xsession
