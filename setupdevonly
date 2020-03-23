@@ -1,0 +1,25 @@
+#! /usr/bin/env bash
+#IHasFeet 2020
+#This script will update the current OS and packages, before next stages begin.
+#
+#Execute by running the below command
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupopenvasonly -O ~/setupopenvasonly && bash ~/setupopenvasonly
+#
+#You can run this file multiple times without causing issues.
+#Perhaps run it twice if your OS hasn't been upgraded for a while?
+#
+#Call the start script
+echo setupdesktoponly_001a >> ~/setup.log
+echo Calling startup script
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/startscript -O ~/startscript && bash ~/startscript
+echo setupdesktoponly_002a >> ~/setup.log
+#Call the openvassetup script
+echo Calling openvassetup script
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/dev/setupdev -O ~/setupdev && bash ~/setupdev
+echo setupdesktoponly_003a >> ~/setup.log
+#Call finish script
+echo Calling finish script
+sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/ScriptHousekeeping/finishscript -O ~/finishscript && bash ~/finishscript
+echo setupdesktoponly_004a >> ~/setup.log
+#
+
