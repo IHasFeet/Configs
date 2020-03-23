@@ -1,0 +1,42 @@
+#! /usr/bin/env bash
+#IHasFeet 2020
+#This set of commands will setup 
+#		i3
+#		xRDP
+#		Firefox
+#		LibreOffice
+#		Onedrive
+#		ubuntu-desktop
+#		ubuntu-gnome-desktop
+#		kubuntu
+#		lubuntu
+#		xubuntu
+#The aim is to take you from an Ubuntu server to a remotely accessible GUI,
+#suitable to run basic desktop functionalalities.
+#
+#I've got no idea why you would do this in a prod environment, however it can be useful for testing
+#
+#xRDP will allow you to use multiple monitors if that is your client configuration.
+#
+#Execute by running the below command
+#sudo wget https://raw.githubusercontent.com/IHasFeet/Configs/master/setupfulldesktop/setupfulldesktop -O ~/setupfulldesktop && bash setupfulldesktop
+#
+#You can run this file multiple times without causing issues.
+#Perhaps run it twice if your OS hasn't been upgraded for a while?
+#
+#
+#We install firefox separately, as Kali doesn't find an installation candidate by default, which fails the whole line.
+#
+sudo apt-get install i3 xrdp  conky onedrive feh w3m-img imagemagick ubuntu-desktop  ubuntu-gnome-desktop kubuntu-desktop  lubuntu-desktop  xubuntu-desktop -y
+sudo apt-get install firefox -y
+sudo snap install libreoffice
+sudo service xrdp start
+#
+mkdir ~/.config
+mkdir ~/.config/i3
+wget https://raw.githubusercontent.com/IHasFeet/Configs/master/i3/config -O ~/.config/i3/config
+#
+#For the sake of sanity, we will set the default xRDP manager to i3
+echo i3 > ~/.xsession
+
+
