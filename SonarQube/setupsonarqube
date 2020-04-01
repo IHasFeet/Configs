@@ -17,5 +17,7 @@ wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.2.0.329
 echo setupsonarqube_004 >> ~/setup.log
 unzip sonarqube-8.2.0.32929.zip
 echo setupsonarqube_005 >> ~/setup.log
-./sonarqube-8.2.0.32929/bin/linux-x86-64/sonar.sh start
+#./sonarqube-8.2.0.32929/bin/linux-x86-64/sonar.sh start
+#We no longer start SonarQube during setup, as it offers no benefits, and can run the system out of memory during additional setup components (specifically mono).
+#There is no identified problem between the two pieces of software - just setup
 echo setupsonarqube_006 >> ~/setup.log
